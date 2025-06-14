@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homepage.css">
+    <title>Atul</title>
+</head>
+<body>
+<div class="home">
+<a name="home"></a>
+    <div class="overlay1"></div>
+
+    <header class="glass-header">
+        <div class="logo">  <a href="#home">    ATUL AD   </a>   </div>
+        <nav class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#about">About me</a>
+          <a href="#poem">Poems</a>
+          <a href="#blog">Blogs</a>
+        </nav>
+        <a href="//wa.me/9779849424498" target="_blank"><button class="cta-button" >Get in Touch</button></a>
+    </header>
+
+    <div class="home-content">
+        <h1>ATUL_AD</h1>
+        <p id="typewriter"> </p>
+    </div>
+
+</div>
+
+
+<a name="about"></a>
+<div class="About">
+
+<div class="overlay2"></div>
+
+
+<div class="about-wrapper">
+    
+    <!-- Section A -->
+    <div class="section-a">
+      <div class="circle-bg"></div>
+      <img src="atul.jpg" alt="Profile Picture" class="profile-pic">
+    </div>
+
+    <!-- Section B -->
+    <div class="section-b">
+      <h2 align="center">About Me</h2> <br>
+      <p>Hello! I'm Atul, a passionate student from Nepal<br><br>
+
+        I'm a passionate individual with a creative spirit and a love for the written word. I find my inspiration in the pages of unwritten stories, aiming to share these narratives with the world. Hailing from the beautiful nation of Nepal, I have a deep-rooted dream of being a catalyst for positive change in my country. <br>Life, to me, is a journey of continuous growth, and I'm excited to embrace every twist and turn it brings.
+
+      </p>
+      <!-- Add more details here -->
+    </div>
+
+    <!-- Section C -->
+    <div class="section-c">
+      <h3>Collection</h3>
+      <ul>
+        <br>
+        <li>Research Report</li>
+        <a href="https://github.com/atul-ad/earthquakes-shivering-nepal/blob/main/Earthquakes%20Sheivering%20Nepal.pdf" style="text-decoration: none; color: white;"><h5>Earthquakes : Shivering Nepal</h5></a>
+        <br><br>
+
+        <li>Poem Collection</li>
+        <a href="" style="text-decoration: none; color: white;"><h5>Shiv : kaari</h5></a>
+        <br><br>
+
+      </ul>
+    </div>
+
+  </div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a name="poem"></a>
+<div class="Poem">
+    
+    <div class="overlay3"></div>
+    
+
+
+    <div class="poem-box">
+      <h2>A Fairy song</h2><br>
+      <p>Over hill, over dale,<br>
+        Thorough bush, thorough brier,<br>
+        Over park, over pale,<br>
+        Thorough flood, thorough fire!<br>
+        I do wander everywhere,<br>
+        Swifter than the moon's sphere;<br>
+        And I serve the Fairy Queen,<br>
+        To dew her orbs upon the green;<br>
+        The cowslips tall her pensioners be;<br>
+        In their gold coats spots you see;<br>
+        Those be rubies, fairy favours;<br>
+        In those freckles live their savours;<br>
+        I must go seek some dewdrops here,<br>
+        And hang a pearl in every cowslip's ear.<br></p>
+      <a href="#" class="read-more">Read More</a>
+    </div>
+  
+  
+    <div class="poem-box">
+      <h2>Poem C</h2>
+      <p>Over hill, over dale,<br>
+        Thorough bush, thorough brier,<br>
+        Over park, over pale,<br>
+        Thorough flood, thorough fire!<br>
+        I do wander everywhere,<br>
+        Swifter than the moon's sphere;<br>
+        And I serve the Fairy Queen,<br>
+        To dew her orbs upon the green;<br>
+        The cowslips tall her pensioners be;<br>
+        In their gold coats spots you see;<br>
+        Those be rubies, fairy favours;<br>
+        In those freckles live their savours;<br>
+        I must go seek some dewdrops here,<br>
+        And hang a pearl in every cowslip's ear.<br></p>
+      <a href="#" class="read-more">Read More</a>
+    </div>
+    
+    
+</div>
+
+
+
+
+
+
+<div class="Blog">
+    <a name="blog"></a>
+    <div class="overlay4"></div>
+    
+    
+    
+    
+</div>
+
+
+
+<a name="contact"></a>
+<div class="contact">
+  <footer>
+    <br><br><h1 align="center">Thanks for visiting! </h1>
+
+  </footer>
+
+</div>
+
+
+
+<script>
+    const text = "Welcome to my site ";
+    const words = text.split(" ");
+    const typewriter = document.getElementById("typewriter");
+  
+    let wordIndex = 0;
+    let isDeleting = false;
+  
+    function typeEffect() {
+      let currentText = typewriter.innerHTML.trim().split(" ");
+  
+      if (!isDeleting) {
+        typewriter.innerHTML += words[wordIndex] + " ";
+        wordIndex++;
+  
+        if (wordIndex === words.length) {
+          isDeleting = true;
+          setTimeout(typeEffect, 1000); // Pause before deleting
+          return;
+        }
+      } else {
+        currentText.pop();
+        typewriter.innerHTML = currentText.join(" ") + " ";
+        wordIndex--;
+  
+        if (wordIndex < 0) {
+          isDeleting = false;
+          wordIndex = 0;
+        }
+      }
+  
+      setTimeout(typeEffect, isDeleting ? 150 : 300); // Faster delete, slower type
+    }
+  
+    typeEffect();
+</script>
+  
+</body>
+</html>

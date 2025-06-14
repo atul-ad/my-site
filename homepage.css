@@ -1,0 +1,317 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+        
+  }
+  
+.home{
+    position: relative;
+    background: url('homepage.jpg') no-repeat center center/cover;
+    height: 100vh;
+    width: 100%;
+    
+ }
+
+ .overlay1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(61, 9, 133, 0.3); /* Black color with 30% opacity */
+    z-index: 0;
+  }
+
+  .glass-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(12px);
+    background-color: rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    z-index: 3;
+  }
+  
+  .logo a {
+    color: wheat;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-links a {
+    position: relative;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    margin: 0 15px;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+  }
+
+  .nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    transition: width 0.3s ease;
+  }
+  
+  .nav-links a:hover::after {
+    width: 100%;
+  }
+  
+  .cta-button {
+    text-decoration: none;
+    background-color: #000;
+    color: #fff;
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .cta-button:hover {
+    background-color: #333;
+  }
+
+
+
+  .home-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: center;
+  top: 40%;
+  transform: translateY(-50%);
+  }
+  
+  .home-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  #typewriter {
+    font-size: 1.5rem;
+    min-height: 2rem;
+  }
+
+
+
+
+
+
+/*About MEEEEEEEEEEEEEEE*/
+
+.About{
+    position: relative;
+    background: url('aboutpage.jpg') no-repeat center center/cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+ }
+
+ .overlay2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(61, 9, 133, 0.3); /* Black color with 30% opacity */
+    z-index: 0;
+  }
+
+  .about-wrapper {
+    display: flex;
+    gap: 8rem;
+    width: 90%;
+    max-width: 14000px;
+    z-index: 2;
+  }
+  
+  /* Section A - Circle + Profile Pic */
+  .section-a {
+    position: relative;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .circle-bg {
+    width: 200px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50% 0 0 50%;
+    position: absolute;
+    left: 0;
+  }
+  
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid white;
+    z-index: 1;
+  }
+  
+  /* Section B - Main Info */
+  .section-b {
+    min-height: 400px; /* increase this as needed */
+    height: auto;
+    flex: 3 ;
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 2rem;
+    border-radius: 20px;
+    backdrop-filter: blur(8px);
+    color: white;
+    transition: 0.3s ease;
+  }
+
+  .section-b:hover {
+    transform: scale(1.03);
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Section C - Sidebar Info */
+  .section-c {
+    flex: 0.5;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 20px;
+    backdrop-filter: blur(6px);
+    color: white;
+  }
+
+
+
+
+
+
+
+
+  /*Poemsssssssssss*/
+
+  .Poem{
+    position: relative;
+    background: url('poempage3.jpg') no-repeat center center/cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 5vw;
+ }
+
+ .overlay3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(51, 5, 119, 0.656); /* Black color with 30% opacity */
+    z-index: 0;
+  }
+
+
+  .poem-box {
+    margin-top: 85px;
+    width: 30%;
+    height: 60vh;
+    backdrop-filter: blur(8px);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding-top: 80px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    color: white;
+    text-align: center;
+    transition: 0.3s ease;
+  }
+  
+  .poem-box:hover {
+    transform: scale(1.03);
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  .read-more {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 8px 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .read-more:hover {
+    background-color: white;
+    color: black;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*Blogssssssssss*/
+
+  .Blog{
+    position: relative;
+    background: url('blogpage.jpg') no-repeat center center/cover;
+    height: 100vh;
+    width: 100%;
+    
+ }
+
+ .overlay4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(51, 5, 119, 0.656); /* Black color with 30% opacity */
+    z-index: 0;
+  }
+
+
+
+  /*Contacttttttttttttttt*/
+  .contact{
+    position: relative;
+    height: 40vh;
+    width: 100%;
+    
+ }
